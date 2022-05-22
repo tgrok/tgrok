@@ -1,0 +1,20 @@
+{
+  "name": "@tgrok/ios",
+  "version": "0.1.0",
+  "description": "iOS client for Tgrok",
+  "author": "Yueyu <donald@drmer.net>",
+  "homepage": "https://github.com/tgrok/tgrok#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgrok/tgrok.git"
+  },
+  "license": "GPL-3.0",
+  "scripts": {
+    "test": "bundle exec fastlane test",
+    "lint": "bundle exec fastlane lint",
+    "lint:fix": "bundle exec fastlane lintfix"
+  },
+  "bugs": {
+    "url": "https://github.com/tgrok/tgrok/issues"
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/.vscode" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/android/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/android/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/android/app/assets/www" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/android/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/core/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/desktop/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/desktop/dist_electron" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/desktop/www" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/gui/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/gui/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ios/Pods" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ios/Tgrok.xcodeproj/project.xcworkspace/xcuserdata" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ios/Tgrok.xcodeproj/xcuserdata" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ios/Tgrok.xcworkspace/xcuserdata" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ios/www" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ios/www/css" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ios/www/js" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/shared/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/utils/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

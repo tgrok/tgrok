@@ -1,0 +1,11 @@
+{
+  "name": "@tgrok/shared",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "main": "dist/cjs/shared.js",
+  "module": "dist/esm/shared.js",
+  "types": "index.d.ts",
+  "author": "Yueyu <donald@drmer.net>",
+  "homepage": "https://github.com/tgrok/tgrok/#readme",
+  "license": "GPL-3.0"
+}

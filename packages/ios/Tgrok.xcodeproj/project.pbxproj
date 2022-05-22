@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FE2F9AFF4E22A852606A755 /* Pods_Tgrok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC614C2E11D5A7457ABF7CE /* Pods_Tgrok.framework */; };
+		404E9D54250CF8C0005354BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9D53250CF8C0005354BD /* AppDelegate.swift */; };
+		404E9D56250CF8C0005354BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9D55250CF8C0005354BD /* SceneDelegate.swift */; };
+		404E9D58250CF8C0005354BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9D57250CF8C0005354BD /* ViewController.swift */; };
+		404E9D5B250CF8C0005354BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404E9D59250CF8C0005354BD /* Main.storyboard */; };
+		404E9D5D250CF8C2005354BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 404E9D5C250CF8C2005354BD /* Assets.xcassets */; };
+		404E9D60250CF8C2005354BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404E9D5E250CF8C2005354BD /* LaunchScreen.storyboard */; };
+		404E9D6B250CF8C2005354BD /* TgrokTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9D6A250CF8C2005354BD /* TgrokTests.swift */; };
+		404E9D76250CF8C2005354BD /* TgrokUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9D75250CF8C2005354BD /* TgrokUITests.swift */; };
+		404E9D8F250D8BD2005354BD /* www in Resources */ = {isa = PBXBuildFile; fileRef = 404E9D8E250D8BD2005354BD /* www */; };
+		404E9D93250D960A005354BD /* TgrokService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9D92250D960A005354BD /* TgrokService.swift */; };
+		404E9D97250D977C005354BD /* PageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9D96250D977C005354BD /* PageService.swift */; };
+		404E9D99250DA612005354BD /* BaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9D98250DA612005354BD /* BaseClient.swift */; };
+		404E9D9B250DA827005354BD /* TgrokClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9D9A250DA827005354BD /* TgrokClient.swift */; };
+		404E9D9D250DAABC005354BD /* LocalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9D9C250DAABC005354BD /* LocalClient.swift */; };
+		404E9DA1250DAB1D005354BD /* ProxyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9DA0250DAB1D005354BD /* ProxyClient.swift */; };
+		404E9DA3250DAB33005354BD /* ControlClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9DA2250DAB33005354BD /* ControlClient.swift */; };
+		404E9DA5250DC314005354BD /* Tgrok.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9DA4250DC314005354BD /* Tgrok.swift */; };
+		404E9DA7250DCA8A005354BD /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9DA6250DCA8A005354BD /* global.swift */; };
+		404E9DAA250DCD6F005354BD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9DA9250DCD6F005354BD /* StringExtensions.swift */; };
+		404E9DAC250E0CD2005354BD /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9DAB250E0CD2005354BD /* IntExtensions.swift */; };
+		404E9DB0250E2146005354BD /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9DAF250E2145005354BD /* JSONExtensions.swift */; };
+		404E9DB2250E3829005354BD /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404E9DB1250E3829005354BD /* DataExtensions.swift */; };
+		4081B952250EE23E0096F9FF /* NWConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081B951250EE23E0096F9FF /* NWConnectionExtensions.swift */; };
+		4095521F250E3CAD008D1287 /* Notification+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4095521E250E3CAD008D1287 /* Notification+Names.swift */; };
+		40955221250E4443008D1287 /* Tunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40955220250E4443008D1287 /* Tunnel.swift */; };
+		409F5867251588A600D98ED7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409F5866251588A600D98ED7 /* Config.swift */; };
+		40CE8E812835252A0021192A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE8E7A2835252A0021192A /* WebViewController.swift */; };
+		40CE8E822835252A0021192A /* JsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE8E7B2835252A0021192A /* JsRequest.swift */; };
+		40CE8E842835252A0021192A /* JsBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE8E7D2835252A0021192A /* JsBridge.swift */; };
+		40CE8E852835252A0021192A /* JsCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE8E7E2835252A0021192A /* JsCallback.swift */; };
+		40CE8E862835252A0021192A /* JsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE8E7F2835252A0021192A /* JsService.swift */; };
+		40CE8E872835252A0021192A /* JsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE8E802835252A0021192A /* JsResult.swift */; };
+		40FE0060251320D20094C7F7 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE005F251320D20094C7F7 /* UIDeviceExtensions.swift */; };
+		8B5600648BD08E52F3A3AB1B /* Pods_Tgrok_TgrokUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2797B23C1549220AAB2DDC27 /* Pods_Tgrok_TgrokUITests.framework */; };
+		9D24236E138B14C696DCCA20 /* Pods_TgrokTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EB25411D23D4F80CCD3E4E /* Pods_TgrokTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		404E9D67250CF8C2005354BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 404E9D48250CF8C0005354BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 404E9D4F250CF8C0005354BD;
+			remoteInfo = Tgrok;
+		};
+		404E9D72250CF8C2005354BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 404E9D48250CF8C0005354BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 404E9D4F250CF8C0005354BD;
+			remoteInfo = Tgrok;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2797B23C1549220AAB2DDC27 /* Pods_Tgrok_TgrokUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tgrok_TgrokUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		375AA444BCF4BA9BDBB355DE /* Pods-Tgrok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tgrok.release.xcconfig"; path = "Target Support Files/Pods-Tgrok/Pods-Tgrok.release.xcconfig"; sourceTree = "<group>"; };
+		3BC614C2E11D5A7457ABF7CE /* Pods_Tgrok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tgrok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		404E9D50250CF8C0005354BD /* Tgrok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tgrok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		404E9D53250CF8C0005354BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		404E9D55250CF8C0005354BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		404E9D57250CF8C0005354BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		404E9D5A250CF8C0005354BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		404E9D5C250CF8C2005354BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		404E9D5F250CF8C2005354BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		404E9D61250CF8C2005354BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		404E9D66250CF8C2005354BD /* TgrokTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TgrokTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		404E9D6A250CF8C2005354BD /* TgrokTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgrokTests.swift; sourceTree = "<group>"; };
+		404E9D6C250CF8C2005354BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		404E9D71250CF8C2005354BD /* TgrokUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TgrokUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		404E9D75250CF8C2005354BD /* TgrokUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgrokUITests.swift; sourceTree = "<group>"; };
+		404E9D77250CF8C2005354BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		404E9D8E250D8BD2005354BD /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		404E9D92250D960A005354BD /* TgrokService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgrokService.swift; sourceTree = "<group>"; };
+		404E9D96250D977C005354BD /* PageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageService.swift; sourceTree = "<group>"; };
+		404E9D98250DA612005354BD /* BaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClient.swift; sourceTree = "<group>"; };
+		404E9D9A250DA827005354BD /* TgrokClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TgrokClient.swift; sourceTree = "<group>"; };
+		404E9D9C250DAABC005354BD /* LocalClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalClient.swift; sourceTree = "<group>"; };
+		404E9DA0250DAB1D005354BD /* ProxyClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyClient.swift; sourceTree = "<group>"; };
+		404E9DA2250DAB33005354BD /* ControlClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlClient.swift; sourceTree = "<group>"; };
+		404E9DA4250DC314005354BD /* Tgrok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tgrok.swift; sourceTree = "<group>"; };
+		404E9DA6250DCA8A005354BD /* global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = global.swift; sourceTree = "<group>"; };
+		404E9DA9250DCD6F005354BD /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		404E9DAB250E0CD2005354BD /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		404E9DAF250E2145005354BD /* JSONExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONExtensions.swift; sourceTree = "<group>"; };
+		404E9DB1250E3829005354BD /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		4081B951250EE23E0096F9FF /* NWConnectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWConnectionExtensions.swift; sourceTree = "<group>"; };
+		4095521E250E3CAD008D1287 /* Notification+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Names.swift"; sourceTree = "<group>"; };
+		40955220250E4443008D1287 /* Tunnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tunnel.swift; sourceTree = "<group>"; };
+		409F5866251588A600D98ED7 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		40CE8E7A2835252A0021192A /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		40CE8E7B2835252A0021192A /* JsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsRequest.swift; sourceTree = "<group>"; };
+		40CE8E7D2835252A0021192A /* JsBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsBridge.swift; sourceTree = "<group>"; };
+		40CE8E7E2835252A0021192A /* JsCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsCallback.swift; sourceTree = "<group>"; };
+		40CE8E7F2835252A0021192A /* JsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsService.swift; sourceTree = "<group>"; };
+		40CE8E802835252A0021192A /* JsResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsResult.swift; sourceTree = "<group>"; };
+		40FE005F251320D20094C7F7 /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
+		4F0B78E45997B8C2F7832694 /* Pods-Tgrok-TgrokUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tgrok-TgrokUITests.release.xcconfig"; path = "Target Support Files/Pods-Tgrok-TgrokUITests/Pods-Tgrok-TgrokUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6EAF8CAFAEA7DA53B9AC1366 /* Pods-TgrokTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TgrokTests.debug.xcconfig"; path = "Target Support Files/Pods-TgrokTests/Pods-TgrokTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7934A24529D51D775C16384A /* Pods-Tgrok-TgrokUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tgrok-TgrokUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tgrok-TgrokUITests/Pods-Tgrok-TgrokUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C6B0ACB8F4E1831659D90CB /* Pods-TgrokTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TgrokTests.release.xcconfig"; path = "Target Support Files/Pods-TgrokTests/Pods-TgrokTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9EB25411D23D4F80CCD3E4E /* Pods_TgrokTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TgrokTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB71AA7EB08197F284FDE972 /* Pods-Tgrok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tgrok.debug.xcconfig"; path = "Target Support Files/Pods-Tgrok/Pods-Tgrok.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		404E9D4D250CF8C0005354BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE2F9AFF4E22A852606A755 /* Pods_Tgrok.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404E9D63250CF8C2005354BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D24236E138B14C696DCCA20 /* Pods_TgrokTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404E9D6E250CF8C2005354BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B5600648BD08E52F3A3AB1B /* Pods_Tgrok_TgrokUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		404E9D47250CF8C0005354BD = {
+			isa = PBXGroup;
+			children = (
+				404E9D8E250D8BD2005354BD /* www */,
+				404E9D52250CF8C0005354BD /* Tgrok */,
+				404E9D69250CF8C2005354BD /* TgrokTests */,
+				404E9D74250CF8C2005354BD /* TgrokUITests */,
+				404E9D51250CF8C0005354BD /* Products */,
+				4613C75B7567CFF97EA7D71B /* Pods */,
+				7E4EECE042069B74F3B85CA7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		404E9D51250CF8C0005354BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				404E9D50250CF8C0005354BD /* Tgrok.app */,
+				404E9D66250CF8C2005354BD /* TgrokTests.xctest */,
+				404E9D71250CF8C2005354BD /* TgrokUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		404E9D52250CF8C0005354BD /* Tgrok */ = {
+			isa = PBXGroup;
+			children = (
+				40CE8E79283524EF0021192A /* web */,
+				404E9DA8250DCD47005354BD /* ext */,
+				404E9D90250D950F005354BD /* tgrok */,
+				404E9D91250D9517005354BD /* service */,
+				404E9D53250CF8C0005354BD /* AppDelegate.swift */,
+				404E9D55250CF8C0005354BD /* SceneDelegate.swift */,
+				404E9D57250CF8C0005354BD /* ViewController.swift */,
+				404E9D59250CF8C0005354BD /* Main.storyboard */,
+				404E9D5C250CF8C2005354BD /* Assets.xcassets */,
+				404E9D5E250CF8C2005354BD /* LaunchScreen.storyboard */,
+				404E9D61250CF8C2005354BD /* Info.plist */,
+				404E9DA6250DCA8A005354BD /* global.swift */,
+				409F5866251588A600D98ED7 /* Config.swift */,
+			);
+			path = Tgrok;
+			sourceTree = "<group>";
+		};
+		404E9D69250CF8C2005354BD /* TgrokTests */ = {
+			isa = PBXGroup;
+			children = (
+				404E9D6A250CF8C2005354BD /* TgrokTests.swift */,
+				404E9D6C250CF8C2005354BD /* Info.plist */,
+			);
+			path = TgrokTests;
+			sourceTree = "<group>";
+		};
+		404E9D74250CF8C2005354BD /* TgrokUITests */ = {
+			isa = PBXGroup;
+			children = (
+				404E9D75250CF8C2005354BD /* TgrokUITests.swift */,
+				404E9D77250CF8C2005354BD /* Info.plist */,
+			);
+			path = TgrokUITests;
+			sourceTree = "<group>";
+		};
+		404E9D90250D950F005354BD /* tgrok */ = {
+			isa = PBXGroup;
+			children = (
+				404E9D98250DA612005354BD /* BaseClient.swift */,
+				404E9D9A250DA827005354BD /* TgrokClient.swift */,
+				404E9D9C250DAABC005354BD /* LocalClient.swift */,
+				404E9DA0250DAB1D005354BD /* ProxyClient.swift */,
+				404E9DA2250DAB33005354BD /* ControlClient.swift */,
+				404E9DA4250DC314005354BD /* Tgrok.swift */,
+				40955220250E4443008D1287 /* Tunnel.swift */,
+			);
+			path = tgrok;
+			sourceTree = "<group>";
+		};
+		404E9D91250D9517005354BD /* service */ = {
+			isa = PBXGroup;
+			children = (
+				404E9D96250D977C005354BD /* PageService.swift */,
+				404E9D92250D960A005354BD /* TgrokService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		404E9DA8250DCD47005354BD /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				404E9DAF250E2145005354BD /* JSONExtensions.swift */,
+				404E9DA9250DCD6F005354BD /* StringExtensions.swift */,
+				404E9DAB250E0CD2005354BD /* IntExtensions.swift */,
+				404E9DB1250E3829005354BD /* DataExtensions.swift */,
+				4095521E250E3CAD008D1287 /* Notification+Names.swift */,
+				4081B951250EE23E0096F9FF /* NWConnectionExtensions.swift */,
+				40FE005F251320D20094C7F7 /* UIDeviceExtensions.swift */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		40CE8E79283524EF0021192A /* web */ = {
+			isa = PBXGroup;
+			children = (
+				40CE8E7D2835252A0021192A /* JsBridge.swift */,
+				40CE8E7E2835252A0021192A /* JsCallback.swift */,
+				40CE8E7B2835252A0021192A /* JsRequest.swift */,
+				40CE8E802835252A0021192A /* JsResult.swift */,
+				40CE8E7F2835252A0021192A /* JsService.swift */,
+				40CE8E7A2835252A0021192A /* WebViewController.swift */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
+		4613C75B7567CFF97EA7D71B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB71AA7EB08197F284FDE972 /* Pods-Tgrok.debug.xcconfig */,
+				375AA444BCF4BA9BDBB355DE /* Pods-Tgrok.release.xcconfig */,
+				7934A24529D51D775C16384A /* Pods-Tgrok-TgrokUITests.debug.xcconfig */,
+				4F0B78E45997B8C2F7832694 /* Pods-Tgrok-TgrokUITests.release.xcconfig */,
+				6EAF8CAFAEA7DA53B9AC1366 /* Pods-TgrokTests.debug.xcconfig */,
+				8C6B0ACB8F4E1831659D90CB /* Pods-TgrokTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7E4EECE042069B74F3B85CA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BC614C2E11D5A7457ABF7CE /* Pods_Tgrok.framework */,
+				2797B23C1549220AAB2DDC27 /* Pods_Tgrok_TgrokUITests.framework */,
+				B9EB25411D23D4F80CCD3E4E /* Pods_TgrokTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		404E9D4F250CF8C0005354BD /* Tgrok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404E9D7A250CF8C2005354BD /* Build configuration list for PBXNativeTarget "Tgrok" */;
+			buildPhases = (
+				4DE7EAD43920FE33E0AD3475 /* [CP] Check Pods Manifest.lock */,
+				404E9D4C250CF8C0005354BD /* Sources */,
+				404E9D4D250CF8C0005354BD /* Frameworks */,
+				404E9D4E250CF8C0005354BD /* Resources */,
+				D0F3ED1EBBE261C1C852EB5B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tgrok;
+			productName = Tgrok;
+			productReference = 404E9D50250CF8C0005354BD /* Tgrok.app */;
+			productType = "com.apple.product-type.application";
+		};
+		404E9D65250CF8C2005354BD /* TgrokTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404E9D7D250CF8C2005354BD /* Build configuration list for PBXNativeTarget "TgrokTests" */;
+			buildPhases = (
+				C2B0B1F7AFDC49ABED81D027 /* [CP] Check Pods Manifest.lock */,
+				404E9D62250CF8C2005354BD /* Sources */,
+				404E9D63250CF8C2005354BD /* Frameworks */,
+				404E9D64250CF8C2005354BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				404E9D68250CF8C2005354BD /* PBXTargetDependency */,
+			);
+			name = TgrokTests;
+			productName = TgrokTests;
+			productReference = 404E9D66250CF8C2005354BD /* TgrokTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		404E9D70250CF8C2005354BD /* TgrokUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404E9D80250CF8C2005354BD /* Build configuration list for PBXNativeTarget "TgrokUITests" */;
+			buildPhases = (
+				92A7734702B91BC23D6FF0E2 /* [CP] Check Pods Manifest.lock */,
+				404E9D6D250CF8C2005354BD /* Sources */,
+				404E9D6E250CF8C2005354BD /* Frameworks */,
+				404E9D6F250CF8C2005354BD /* Resources */,
+				7546EA6473CB9E37E496DD2C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				404E9D73250CF8C2005354BD /* PBXTargetDependency */,
+			);
+			name = TgrokUITests;
+			productName = TgrokUITests;
+			productReference = 404E9D71250CF8C2005354BD /* TgrokUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		404E9D48250CF8C0005354BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = "Yueyu Zhao";
+				TargetAttributes = {
+					404E9D4F250CF8C0005354BD = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					404E9D65250CF8C2005354BD = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 404E9D4F250CF8C0005354BD;
+					};
+					404E9D70250CF8C2005354BD = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 404E9D4F250CF8C0005354BD;
+					};
+				};
+			};
+			buildConfigurationList = 404E9D4B250CF8C0005354BD /* Build configuration list for PBXProject "Tgrok" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 404E9D47250CF8C0005354BD;
+			productRefGroup = 404E9D51250CF8C0005354BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				404E9D4F250CF8C0005354BD /* Tgrok */,
+				404E9D65250CF8C2005354BD /* TgrokTests */,
+				404E9D70250CF8C2005354BD /* TgrokUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		404E9D4E250CF8C0005354BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404E9D8F250D8BD2005354BD /* www in Resources */,
+				404E9D60250CF8C2005354BD /* LaunchScreen.storyboard in Resources */,
+				404E9D5D250CF8C2005354BD /* Assets.xcassets in Resources */,
+				404E9D5B250CF8C0005354BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404E9D64250CF8C2005354BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404E9D6F250CF8C2005354BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DE7EAD43920FE33E0AD3475 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tgrok-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7546EA6473CB9E37E496DD2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tgrok-TgrokUITests/Pods-Tgrok-TgrokUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tgrok-TgrokUITests/Pods-Tgrok-TgrokUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tgrok-TgrokUITests/Pods-Tgrok-TgrokUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92A7734702B91BC23D6FF0E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tgrok-TgrokUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2B0B1F7AFDC49ABED81D027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TgrokTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0F3ED1EBBE261C1C852EB5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tgrok/Pods-Tgrok-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tgrok/Pods-Tgrok-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tgrok/Pods-Tgrok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		404E9D4C250CF8C0005354BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404E9D93250D960A005354BD /* TgrokService.swift in Sources */,
+				40CE8E862835252A0021192A /* JsService.swift in Sources */,
+				40FE0060251320D20094C7F7 /* UIDeviceExtensions.swift in Sources */,
+				404E9D99250DA612005354BD /* BaseClient.swift in Sources */,
+				40CE8E872835252A0021192A /* JsResult.swift in Sources */,
+				404E9D9B250DA827005354BD /* TgrokClient.swift in Sources */,
+				404E9DA5250DC314005354BD /* Tgrok.swift in Sources */,
+				404E9DA1250DAB1D005354BD /* ProxyClient.swift in Sources */,
+				40955221250E4443008D1287 /* Tunnel.swift in Sources */,
+				404E9D58250CF8C0005354BD /* ViewController.swift in Sources */,
+				404E9DB0250E2146005354BD /* JSONExtensions.swift in Sources */,
+				404E9DA7250DCA8A005354BD /* global.swift in Sources */,
+				40CE8E812835252A0021192A /* WebViewController.swift in Sources */,
+				409F5867251588A600D98ED7 /* Config.swift in Sources */,
+				4095521F250E3CAD008D1287 /* Notification+Names.swift in Sources */,
+				40CE8E852835252A0021192A /* JsCallback.swift in Sources */,
+				404E9DAC250E0CD2005354BD /* IntExtensions.swift in Sources */,
+				404E9D9D250DAABC005354BD /* LocalClient.swift in Sources */,
+				404E9D54250CF8C0005354BD /* AppDelegate.swift in Sources */,
+				40CE8E822835252A0021192A /* JsRequest.swift in Sources */,
+				404E9DB2250E3829005354BD /* DataExtensions.swift in Sources */,
+				40CE8E842835252A0021192A /* JsBridge.swift in Sources */,
+				404E9D56250CF8C0005354BD /* SceneDelegate.swift in Sources */,
+				4081B952250EE23E0096F9FF /* NWConnectionExtensions.swift in Sources */,
+				404E9DA3250DAB33005354BD /* ControlClient.swift in Sources */,
+				404E9D97250D977C005354BD /* PageService.swift in Sources */,
+				404E9DAA250DCD6F005354BD /* StringExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404E9D62250CF8C2005354BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404E9D6B250CF8C2005354BD /* TgrokTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404E9D6D250CF8C2005354BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404E9D76250CF8C2005354BD /* TgrokUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		404E9D68250CF8C2005354BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 404E9D4F250CF8C0005354BD /* Tgrok */;
+			targetProxy = 404E9D67250CF8C2005354BD /* PBXContainerItemProxy */;
+		};
+		404E9D73250CF8C2005354BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 404E9D4F250CF8C0005354BD /* Tgrok */;
+			targetProxy = 404E9D72250CF8C2005354BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		404E9D59250CF8C0005354BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				404E9D5A250CF8C0005354BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		404E9D5E250CF8C2005354BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				404E9D5F250CF8C2005354BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		404E9D78250CF8C2005354BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		404E9D79250CF8C2005354BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		404E9D7B250CF8C2005354BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB71AA7EB08197F284FDE972 /* Pods-Tgrok.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TJQ39JGQ64;
+				INFOPLIST_FILE = Tgrok/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.drmer.ios.tgrok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		404E9D7C250CF8C2005354BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 375AA444BCF4BA9BDBB355DE /* Pods-Tgrok.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TJQ39JGQ64;
+				INFOPLIST_FILE = Tgrok/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.drmer.ios.tgrok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		404E9D7E250CF8C2005354BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EAF8CAFAEA7DA53B9AC1366 /* Pods-TgrokTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTAV98PNX5;
+				INFOPLIST_FILE = TgrokTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.drmer.ios.TgrokTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tgrok.app/Tgrok";
+			};
+			name = Debug;
+		};
+		404E9D7F250CF8C2005354BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C6B0ACB8F4E1831659D90CB /* Pods-TgrokTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTAV98PNX5;
+				INFOPLIST_FILE = TgrokTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.drmer.ios.TgrokTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tgrok.app/Tgrok";
+			};
+			name = Release;
+		};
+		404E9D81250CF8C2005354BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7934A24529D51D775C16384A /* Pods-Tgrok-TgrokUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTAV98PNX5;
+				INFOPLIST_FILE = TgrokUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.drmer.ios.TgrokUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tgrok;
+			};
+			name = Debug;
+		};
+		404E9D82250CF8C2005354BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0B78E45997B8C2F7832694 /* Pods-Tgrok-TgrokUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTAV98PNX5;
+				INFOPLIST_FILE = TgrokUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.drmer.ios.TgrokUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tgrok;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		404E9D4B250CF8C0005354BD /* Build configuration list for PBXProject "Tgrok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404E9D78250CF8C2005354BD /* Debug */,
+				404E9D79250CF8C2005354BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		404E9D7A250CF8C2005354BD /* Build configuration list for PBXNativeTarget "Tgrok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404E9D7B250CF8C2005354BD /* Debug */,
+				404E9D7C250CF8C2005354BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		404E9D7D250CF8C2005354BD /* Build configuration list for PBXNativeTarget "TgrokTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404E9D7E250CF8C2005354BD /* Debug */,
+				404E9D7F250CF8C2005354BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		404E9D80250CF8C2005354BD /* Build configuration list for PBXNativeTarget "TgrokUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404E9D81250CF8C2005354BD /* Debug */,
+				404E9D82250CF8C2005354BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 404E9D48250CF8C0005354BD /* Project object */;
+}

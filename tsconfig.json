@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowJs": false,
+    "sourceMap": true,
+    "removeComments": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "@tgrok/*": [
+        "packages/*/src"
+      ]
+    },
+    "outDir": "./out",
+    "declaration": true
+  },
+  "exclude": [
+    "node_modules",
+    "**/dist/**",
+    "**/lib/**",
+    "**/test/**",
+    "**/scripts/**",
+    "**/types/**",
+    "packages/desktop/**",
+    "rollup.config.js"
+  ],
+  "ts-node": {
+    "files": true,
+    "compilerOptions": {
+      "esModuleInterop": true
+    }
+  }
+}

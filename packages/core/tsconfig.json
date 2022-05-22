@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "outDir": "./lib/",
+    "strict": true,
+    "strictNullChecks": false,
+    "noImplicitAny": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

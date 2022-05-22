@@ -1,0 +1,37 @@
+{
+  "name": "@tgrok/core",
+  "version": "0.1.0",
+  "description": "tgrok: a ngrok client by typescript",
+  "main": "dist/cjs/core.js",
+  "module": "dist/esm/core.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "tgrok",
+    "ngrok",
+    "tunnel",
+    "typescript"
+  ],
+  "homepage": "https://github.com/tgrok/tgrok/#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgrok/tgrok.git"
+  },
+  "author": "yueyuzhao",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@drmer/core": "^0.1.7",
+    "@tgrok/utils": "0.1.0",
+    "@tgrok/shared": "0.1.0",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "@types/randomatic": "3.1.3",
+    "@types/lodash": "^4.14.160",
+    "@types/node": "^14.6.4",
+    "tslint": "^6.1.3",
+    "typescript": "~3.9.3"
+  }
+}

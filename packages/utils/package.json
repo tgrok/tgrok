@@ -1,0 +1,20 @@
+{
+  "name": "@tgrok/utils",
+  "version": "0.1.0",
+  "main": "dist/cjs/utils.js",
+  "module": "dist/esm/utils.js",
+  "types": "index.d.ts",
+  "description": "> TODO: description",
+  "author": "Yueyu <donald@drmer.net>",
+  "homepage": "",
+  "license": "GPL-3.0",
+  "files": [
+    "src",
+    "dist",
+    "*.d.ts"
+  ],
+  "dependencies": {
+    "dayjs": "^1.8.35",
+    "randomatic": "^3.1.1"
+  }
+}
