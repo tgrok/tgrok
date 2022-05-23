@@ -24,7 +24,7 @@ module.exports = {
     contentBase: path.join(__dirname, "www"),
   },
   lintOnSave: false,
-  indexPath: "www/index.html",
+  // indexPath: "www/index.html",
   pluginOptions: {
     electronBuilder: {
       mainProcessFile: "main/background.ts",
@@ -68,16 +68,6 @@ module.exports = {
       config.plugins.delete("preload");
       config.plugins.delete("prefetch");
     }
-
-    // config
-    //   .entry("app")
-    //   .clear();
-    //
-    // config.entry("app")
-    //   .add("./playground/main.ts");
-    //
-    // config.resolve.alias
-    //   .set("@", path.resolve("playground"));
 
     config.resolve.extensions.merge([".json", ".svg"]);
   },
