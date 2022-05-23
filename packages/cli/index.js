@@ -73,14 +73,7 @@ if (args["--help"]) {
   return;
 }
 
-const host = args["--server"];
-
-if (!host) {
-  console.log("You must specify the server");
-
-  return;
-}
-tgrok.host = host;
+tgrok.host = args["--server"] || "t.drmer.net";
 tgrok.port = args["--port"] || 4443;
 
 tgrok.debug = !!args["--debug"];

@@ -1,6 +1,6 @@
 {
   "name": "@tgrok/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "tgrok cli of tunneling service",
   "main": "index.js",
   "scripts": {
